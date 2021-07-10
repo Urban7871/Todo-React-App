@@ -1,0 +1,30 @@
+.todoDiv{
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    font-size: 2.5rem;
+    width: 50%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    p{
+        width: 66%;
+    }
+
+    &:last-child{
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+}
+
+.unChecked{
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+
+.checked{
+    text-decoration: line-through;
+    transition: all .5s;
+    color: rgba($color: #ffffff, $alpha: .5);
+}

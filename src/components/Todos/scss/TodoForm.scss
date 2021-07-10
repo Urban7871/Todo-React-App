@@ -1,0 +1,36 @@
+@import '../../app.scss';
+
+.inputWrapper{
+    width: 100%;
+}
+.inputWrapper{
+    margin: auto;
+    display: flex;
+
+    form{
+        display: inline-flex;
+        width: max-content;
+        height: 50%;
+        button{
+            width: 10rem;
+            background: rgb(255, 181, 250);
+            border: none;
+            border-left: 1px solid rgb(136, 76, 132);
+            display: none;
+        }
+
+        .textInput{
+            width: 40rem;
+            height: 2rem;
+            border: none;
+            background: rgb(255, 181, 250);
+            border-radius: 10px;
+            color: rgb(73, 73, 73);
+
+            @include respond (tab-port) {
+                width: 25rem;
+            }
+        }
+    }
+}
+
